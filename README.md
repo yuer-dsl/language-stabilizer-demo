@@ -1,3 +1,7 @@
+Language Stabilizer · Demo (LS-Demo)
+
+A Non-Intervention Emotional Safety Layer for LLM Conversations
+
 🚀 Overview
 
 Language Stabilizer (LS-Demo) is a lightweight, non-intervention safety layer designed to keep
