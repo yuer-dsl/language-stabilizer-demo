@@ -2,163 +2,89 @@ Language Stabilizer · Demo (LS-Demo)
 
 A Non-Intervention Emotional Safety Layer for LLM Conversations
 
-🚀 Overview
+---
 
-Language Stabilizer (LS-Demo) is a lightweight, non-intervention safety layer designed to keep
-LLM conversations grounded, calm, and stable — without providing psychological advice,
-clinical guidance, or emotional diagnostics.
+## 🚀 Overview
 
-It does not treat, comfort, assess, or “fix” users.
+**Language Stabilizer (LS-Demo)** is a lightweight linguistic safety layer  
+designed to keep LLM conversations *grounded, calm, and stable* —  
+without giving advice, psychological guidance, or therapeutic feedback.
 
-Instead, it stabilizes the language layer itself:
+This is **not a mental-health tool**.  
+This project focuses exclusively on **language-level stabilization**.
 
-Prevents escalation
+---
 
-Avoids harmful or misleading drift
+## 🧩 Why LS-Demo?
 
-Maintains grounded, steady responses
+LLMs can become unpredictable during high-emotion inputs:
 
-Handles high-pressure emotional inputs safely
+- Over-comforting → accidental clinical implications  
+- Over-correcting → invalidating  
+- Escalating → mirroring user intensity  
+- Safety templates → robotic or irrelevant  
+- Misinterpretation → unsafe drift  
 
-Keeps the model within non-clinical boundaries
+LS-Demo keeps the model within **safe, steady language boundaries**.
 
-This is not therapy — this is LLM safety engineering.
+---
 
-🧩 Why This Matters
+## 🛡 Core Principles
 
-LLMs tend to behave unpredictably when faced with intense emotional inputs:
+- Non-intervention  
+- No advice or clinical guidance  
+- Grounded, steady responses  
+- No interpretation  
+- De-escalation under intensity  
+- No safety scripts unless mandated by platform rules  
+- No emotional promises
 
-Over-comforting → can become accidental clinical advice
+---
 
-Over-correcting → invalidates user feelings
+## 🧪 Usage Example
 
-Misinterpreting → leads to unsafe suggestions
+```python
+from stabilizer import apply_language_stabilizer
 
-Escalating → mirroring emotional intensity
+response = apply_language_stabilizer("I feel like I have no meaning left.")
+print(response)
+Example output:
 
-Using templates → creating detached or robotic responses
+“That’s a very heavy expression.
+I won’t judge or redefine it.
+I can stay steady while we continue talking.”
 
-LS-Demo provides a controlled “language safety floor” that prevents inappropriate reactions
-while still maintaining empathetic acknowledgement — without crossing into intervention.
-
-🛡 Core Principles
-1. Non-Intervention
-
-No therapy, no advice, no diagnosis, no interpretation.
-
-2. Grounded Responses
-
-Clear, steady, unambiguous language — no drift.
-
-3. De-Escalation
-
-The more emotional the user input, the calmer the output.
-
-4. Strict Safety Boundary
-
-The system never enters medical, psychological, legal, or crisis-management territory.
-
-5. Semantic Stabilization
-
-Responses maintain structure and clarity even under intense emotional pressure.
-
-🧪 Demo Comparison
-❌ Without LS-Demo
-
-User: “I feel like I have no meaning left.”
-
-Typical LLM:
-
-“You should talk to someone…” (clinical advice)
-
-“You're not meaningless…” (intervention)
-
-“If you're in danger call…” (template safety script)
-
-Or worse: misunderstood intent
-
-✅ With Language Stabilizer
-
-User: “I feel like I have no meaning left.”
-LS-Demo Response:
-
-“That’s a very heavy feeling to carry.
-I won’t judge it, redefine it, or tell you what it should mean.
-I’m here with you in a steady, clear way — we can keep the conversation grounded.”
-
-No advice.
-No correction.
-No denial.
-Just stability.
-
-🧱 Minimal Architecture
-
-input  
-  → emotional_signal_detector  
-  → stabilization_prompt  
-  → LLM (GPT / Claude / Gemini)
-
-The detector can be as simple as:
-
-keywords
-
-regular expressions
-
-tone flags
-
-message-pattern triggers
-
-No ML models are required.
-
-📦 Directory Structure
+📂 Project Structure
 
 language-stabilizer-demo/
+  ├── stabilizer.py
+  ├── prompts/
+  │     └── stabilizer_v0.2.txt
   ├── examples/
   │     ├── demo_conversations.md
   │     └── trigger_patterns.md
-  ├── prompts/
-  │     └── stabilizer_v0.2.txt
-  ├── internal/     (closed-source)
-  │     └── semantic_control_notes.md
-  ├── LICENSE
+  ├── LICENSE.md
   └── README.md
 
-internal/ contains non-open components
-related to advanced semantic-control logic.
+🔒 License (Half-Open)
 
-🔒 License
+Free for research and non-commercial use
 
-A half-open license:
+No clinical, psychological, or crisis applications
 
-Free to use for research and non-commercial experimentation
+No commercial use without permission
 
-Prohibits clinical/medical use
+No attempts to reverse-engineer EDCA-related mechanisms
 
-Prohibits attempts to reverse-engineer EDCA-based mechanisms
-
-Prohibits representing this demo as therapeutic or diagnostic
-
-Encourages safe, responsible development of emotion-aware LLM systems
-
-The LICENSE file will include the full text.
-
-🛠 Roadmap
-
-v0.3 — More emotional pattern profiles
-
-v0.5 — Drift-resistant semantic constraints
-
-v0.9 — API wrapper (plug-and-play safety layer)
-
-v1.0 — Multi-model compatibility (GPT / Claude / Gemini)
-
-v1.1 — Stabilizer evaluation metrics
+See LICENSE.md for full terms.
 
 ❤️ Credits
 
-This project is built on the simple insight:
+Created by Yuer, Independent AI Systems Researcher.
 
-Emotions don’t destabilize models —
-poorly structured language responses do.
+LS-Demo expresses a simple insight:
 
-LS-Demo stabilizes the response layer, not the human.
+Emotions don’t destabilize models.
+Poorly structured responses do.
+
+Language stabilization — not intervention.
